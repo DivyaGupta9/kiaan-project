@@ -25,7 +25,7 @@ const MyCard = ({ posts, handlePageClick, post, currentPage }) => {
   console.log(post.id % 12);
   return (
     // <div>
-    <Card className="my-2" style={{ height: "26rem" }}>
+    <Card className="my-2" style={{ height: "27rem" }}>
       <Card.Body>
         <span>{post.id}</span>
         <NavLink
