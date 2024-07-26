@@ -36,16 +36,16 @@ const MyCard = ({ posts, handlePageClick, post, currentPage }) => {
           X
         </NavLink>
         <Card.Title>
-          {post.title.length > 18
-            ? `${post.title.toUpperCase().substring(0, 18)}...`
+          {post.title.length > 16
+            ? `${post.title.toUpperCase().substring(0, 16)}...`
             : post.title}
         </Card.Title>
         {/* <Card.Subtitle className="mb-2 text-muted">
             Card Subtitle
           </Card.Subtitle> */}
         <Card.Text>
-          {post.body.length > 60
-            ? `${post.body.toUpperCase().substring(0, 60)}...`
+          {post.body.length > 58
+            ? `${post.body.toUpperCase().substring(0, 58)}...`
             : post.body}
         </Card.Text>
         {/* <Card.Link href="#">Card Link</Card.Link>
