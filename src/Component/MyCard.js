@@ -25,7 +25,7 @@ const MyCard = ({ posts, handlePageClick, post, currentPage }) => {
   console.log(post.id % 12);
   return (
     // <div>
-    <Card className="my-2" style={{ height: "27rem" }}>
+    <Card className="my-2" style={{ height: "25rem" }}>
       <Card.Body>
         <span>{post.id}</span>
         <NavLink
@@ -51,7 +51,7 @@ const MyCard = ({ posts, handlePageClick, post, currentPage }) => {
         {/* <Card.Link href="#">Card Link</Card.Link>
           <Card.Link href="#">Another Link</Card.Link> */}
         <span>{date}</span>
-        <Image src={imgArr[post.id % 11]} width={350} height={230} />
+        <Image src={imgArr[post.id % 11]} className="w-100 h-50" />
       </Card.Body>
     </Card>
     // </div>

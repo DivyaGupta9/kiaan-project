@@ -59,7 +59,7 @@ function App() {
       <Row className="mx-5 my-5">
         {currentItems.map((post, index) => {
           return (
-            <Col className="col-4" key={index}>
+            <Col className="col-lg-4 col-sm-12" key={index}>
               <MyCard
                 posts={posts}
                 setPosts={setPosts}
