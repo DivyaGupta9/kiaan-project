@@ -1,22 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import img1 from "../images/img1.jpeg";
-import img2 from "../images/img2.jpeg";
-import img3 from "../images/img3.jpeg";
-import img4 from "../images/img4.jpeg";
-import img5 from "../images/img5.jpeg";
-import img6 from "../images/img6.jpeg";
 import { Image, NavLink } from "react-bootstrap";
 import { imgArr } from "../utils/utilsArr";
 
-const MyCard = ({
-  posts,
-  setPosts,
-  handlePageClick,
-  post,
-  index,
-  currentPage,
-}) => {
+const MyCard = ({ posts, handlePageClick, post, currentPage }) => {
   // console.log(post);
   const ndate = Math.floor(10 * Math.random());
   // console.log(ndate);
@@ -28,11 +15,7 @@ const MyCard = ({
     month: "long",
     day: "numeric",
   });
-  function removeObjectWithId(arr, id) {
-    const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
-    arr.splice(objWithIdIndex, 1);
-    return arr;
-  }
+
   const removePost = (id) => {
     const objWithIdIndex = posts.findIndex((obj) => obj.id === id);
     posts.splice(objWithIdIndex, 1);

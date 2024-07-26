@@ -9,7 +9,7 @@ import img8 from "../images/img8.jpeg";
 import img9 from "../images/img9.jpeg";
 import img10 from "../images/img10.jpeg";
 import img11 from "../images/img11.jpeg";
-import img12 from "../images/img12.jpeg";
+// import img12 from "../images/img12.jpeg";
 
 export const imgArr = [
   img1,
